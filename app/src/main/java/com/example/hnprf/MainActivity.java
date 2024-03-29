@@ -1,5 +1,6 @@
 package com.example.hnprf;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (toast != null) {toast.cancel();}
 
-
-                toast = Toast.makeText(MainActivity.this, "你點擊了 " + connectButton.getText()  , Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(MainActivity.this, MainConnect.class);
+                startActivity(intent);
             }
         });
 

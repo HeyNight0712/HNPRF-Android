@@ -4,4 +4,6 @@
     <string name="activity_main_connect_name">連線</string>
     <string name="activity_main_select_name">選擇</string>
     <string name="activity_main_setting_button">設定</string>
+    <string name="connect_main_connect_title">藍芽:</string>
+    <string name="connect_main_connect_stats">未知</string>
 </resources>
