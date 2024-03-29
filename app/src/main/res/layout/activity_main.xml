@@ -9,10 +9,40 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="@string/activity_main_title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.082"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" android:id="@+id/textView"/>
+    <Button
+            android:text="@string/activity_main_connect_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/activity_main_connect_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/activity_main_select_button"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/activity_main_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/activity_main_select_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_connect_button"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/activity_main_setting_button"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/activity_main_setting_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/activity_main_setting_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_select_button"
+            app:layout_constraintVertical_bias="0.5" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
